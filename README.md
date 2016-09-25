@@ -1,4 +1,4 @@
-# pizzaboy_master
+# pizzaboy
 The pizza order placing app with igredients detection by cam.
 Usage:
   scan your ingredients by cam and it will add them to your list.
