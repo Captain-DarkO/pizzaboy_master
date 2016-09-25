@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PizzaBoy</string>
+    <string name="btn_create">Make new pizza!</string>
+    <string name="btn_add_ing">Add Ignredient</string>
+</resources>

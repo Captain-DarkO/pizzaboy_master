@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.anurag.pizzaboy.MainActivity">
+
+    <Button
+        android:id="@+id/button_make"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/logo_pizza"
+        android:contextClickable="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button_make"
+        android:layout_alignRight="@+id/button_make"
+        android:layout_below="@+id/button_make"
+        android:layout_marginTop="13dp"
+        android:text="@string/btn_create"
+        android:textColor="#3f3333"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button_fav"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView"
+        android:background="@mipmap/ic_fav"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/textFav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_fav"
+        android:layout_alignEnd="@+id/button_fav"
+        android:layout_alignLeft="@+id/button_fav"
+        android:layout_alignRight="@+id/button_fav"
+        android:layout_alignStart="@+id/button_fav"
+        android:layout_marginBottom="11dp"
+        android:text="Load Favourite"
+        android:textAlignment="center"
+        android:textColor="#9f3333" />
+
+    <TextView
+        android:id="@+id/textPreset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textFav"
+        android:layout_alignBottom="@+id/textFav"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignLeft="@+id/button_preset"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignStart="@+id/button_preset"
+        android:text="Load \nPreset"
+        android:textAlignment="center"
+        android:textColor="#9f3333" />
+
+    <Button
+        android:id="@+id/button_preset"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView"
+        android:background="@mipmap/ic_preset" />
+</RelativeLayout>

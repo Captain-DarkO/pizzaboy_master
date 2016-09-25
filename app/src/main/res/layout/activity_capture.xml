@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_capture"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.anurag.pizzaboy.CaptureActivity">
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ingredients_stub"
+        android:layout_width="220dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_capture"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="440dp"
+        android:background="@mipmap/ic_add" />
+
+    <Button
+        android:id="@+id/button_done"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="440dp"
+        android:layout_toRightOf="@id/button_capture"
+        android:background="@mipmap/ic_done" />
+
+    <Button
+        android:id="@+id/btn_base"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/ic_base"
+        android:padding="10dp"
+        android:textColor="#ee8989" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_toRightOf="@+id/btn_base"
+        android:text="Base"
+        android:textAlignment="center"
+        android:textColor="#eeeeee" />
+
+    <Button
+        android:id="@+id/btn_top"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_below="@id/btn_base"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/ic_top"
+        android:padding="10dp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/btn_top"
+        android:layout_margin="20dp"
+        android:layout_toRightOf="@+id/btn_top"
+        android:text="Topping"
+        android:textAlignment="center"
+        android:textColor="#eeeeee" />
+
+    <TextView
+        android:id="@+id/text_button_cap"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_below="@id/button_capture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:text="Add"
+        android:textAlignment="center"
+        android:textColor="#ffffff" />
+
+
+</RelativeLayout>
